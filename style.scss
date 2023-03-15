@@ -1,0 +1,48 @@
+.container {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  &__restart {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    display: none;
+  }
+}
+
+.timer {
+  display: none;
+}
+.field {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  gap: 5px;
+  &__rect {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  border: 5px solid lime;
+}
