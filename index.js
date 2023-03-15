@@ -41,6 +41,7 @@ function startGame() {
   window.timerId = setInterval(() => {
     timer.textContent = Number(timer.textContent) - 1;
     if (timer.textContent == 0) {
+      prev = 0;
       alert('Time is ower');
       clearInterval(timerId);
     }
@@ -68,6 +69,7 @@ function resetGame() {
   restart.style.display = 'none';
   const btn = document.getElementById('btn');
   btn.style.display = 'block';
+  prev = 0;
   // startGame();
 }
 
